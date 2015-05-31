@@ -25,6 +25,18 @@
             </intent-filter>
         </activity>
         <activity android:name="com.coolweather.activity.WeatherActivity" />
+
+        <service
+            android:name="com.coolweather.service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <receiver
+            android:name="com.coolweather.receiver.AutoUpdateReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
     </application>
 
 </manifest>
