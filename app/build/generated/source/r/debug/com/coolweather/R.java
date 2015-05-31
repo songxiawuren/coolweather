@@ -1506,6 +1506,10 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020038;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020039;
         public static final int abc_textfield_search_material=0x7f02003a;
+        public static final int home=0x7f02003b;
+        public static final int ic_launcher=0x7f02003c;
+        public static final int logo=0x7f02003d;
+        public static final int refresh=0x7f02003e;
     }
     public static final class id {
         public static final int action_bar=0x7f0c0040;
@@ -1527,10 +1531,10 @@ containing a value of this type.
         public static final int beginning=0x7f0c0013;
         public static final int buttonPanel=0x7f0c0036;
         public static final int checkbox=0x7f0c0038;
-        public static final int city_name=0x7f0c0051;
+        public static final int city_name=0x7f0c0052;
         public static final int collapseActionView=0x7f0c0017;
         public static final int contentPanel=0x7f0c0031;
-        public static final int current_date=0x7f0c0054;
+        public static final int current_date=0x7f0c0056;
         public static final int custom=0x7f0c0035;
         public static final int customPanel=0x7f0c0034;
         public static final int decor_content_parent=0x7f0c003e;
@@ -1558,8 +1562,9 @@ containing a value of this type.
         public static final int parentPanel=0x7f0c002d;
         public static final int progress_circular=0x7f0c0005;
         public static final int progress_horizontal=0x7f0c0006;
-        public static final int publish_text=0x7f0c0052;
+        public static final int publish_text=0x7f0c0054;
         public static final int radio=0x7f0c003a;
+        public static final int refresh_weather=0x7f0c0053;
         public static final int screen=0x7f0c001f;
         public static final int scrollView=0x7f0c0032;
         public static final int search_badge=0x7f0c0044;
@@ -1582,9 +1587,10 @@ containing a value of this type.
         public static final int src_in=0x7f0c0021;
         public static final int src_over=0x7f0c0022;
         public static final int submit_area=0x7f0c004b;
+        public static final int switch_city=0x7f0c0051;
         public static final int tabMode=0x7f0c000b;
-        public static final int temp1=0x7f0c0056;
-        public static final int temp2=0x7f0c0057;
+        public static final int temp1=0x7f0c0058;
+        public static final int temp2=0x7f0c0059;
         public static final int textSpacerNoButtons=0x7f0c0033;
         public static final int title=0x7f0c002c;
         public static final int title_template=0x7f0c002f;
@@ -1592,8 +1598,8 @@ containing a value of this type.
         public static final int topPanel=0x7f0c002e;
         public static final int up=0x7f0c0008;
         public static final int useLogo=0x7f0c0012;
-        public static final int weather_desp=0x7f0c0055;
-        public static final int weather_info_layout=0x7f0c0053;
+        public static final int weather_desp=0x7f0c0057;
+        public static final int weather_info_layout=0x7f0c0055;
         public static final int withText=0x7f0c001a;
         public static final int wrap_content=0x7f0c001d;
     }
