@@ -10,22 +10,22 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 
     /**
-     *  ProvinceΩ®±Ì”Ôæ‰
+     *  ProvinceË°®ÂàõÂª∫ËØ≠Âè•
      */
-    public static final String CREATE_PROVINCE = "Create table Province ("
-            + "id integer primary key autoincrement. "
+    public static final String CREATE_PROVINCE = "create table Province ("
+            + "id integer primary key autoincrement,"
             + "province_name text, "
             + "province_code text)";
     /**
-     *  City±ÌΩ®±Ì”Ôæ‰
+     *  CityË°®Âª∫Ë°®ËØ≠Âè•
      */
-    public static final String CREATE_CITY = "Create table City ("
-            + "id integer primary key autoincrement. "
+    public static final String CREATE_CITY = "create table City ("
+            + "id integer primary key autoincrement, "
             + "city_name text, "
             + "city_code text, "
             + "province_id integer)";
     /**
-     * Country±ÌΩ®±Ì”Ôæ‰
+     * CountryË°®Âª∫Ë°®ËØ≠Âè•
      */
     public static final String CREATE_COUNTY = "create table County ("
             + "id integer primary key autoincrement, "

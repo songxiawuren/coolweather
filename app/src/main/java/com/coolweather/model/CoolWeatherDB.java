@@ -13,42 +13,42 @@ import java.util.List;
 /**
  * Created by byn on 2015/5/29.
  */
-public class CoolWeatherDdB {
+public class CoolWeatherDB {
 
     /**
-     * Êı¾İ¿âÃû
+     * æ•°æ®åº“å
      */
     public static final String DB_NAME = "cool_weather";
 
     /**
-     * Êı¾İ¿â°æ±¾
+     * æ•°æ®åº“ç‰ˆæœ¬
      */
     public static final int VERSION = 1;
 
-    private static CoolWeatherDdB coolWeatherDB;
+    private static CoolWeatherDB coolWeatherDB;
 
     private SQLiteDatabase db;
 
     /**
-     * ½«¹¹Ôì·½·¨Ë½ÓĞ»¯
+     * å°†æ„é€ æ–¹æ³•ç§æœ‰åŒ–
      */
-    private CoolWeatherDdB(Context context){
+    private CoolWeatherDB(Context context){
         CoolWeatherOpenHelper dbHelper = new CoolWeatherOpenHelper (context,
                 DB_NAME,null,VERSION);
         db = dbHelper.getWritableDatabase ();
     }
 
     /**
-     * »ñÈ¡CoolWeatherDBµÄ°¸Àı
+     * è·å–CoolWeatherDBå®ä¾‹
      */
-    public synchronized static CoolWeatherDdB getInstance(Context context){
+    public synchronized static CoolWeatherDB getInstance(Context context){
         if (coolWeatherDB == null)
-            coolWeatherDB = new CoolWeatherDdB (context);
+            coolWeatherDB = new CoolWeatherDB (context);
         return coolWeatherDB;
     }
 
     /**
-     * ½«ProvinceÊµÀı´æ´¢µ½Êı¾İ¿â
+     * å°†Provinceå®ä¾‹å­˜å‚¨åˆ°æ•°æ®åº“
      */
     public void saveProvince(Province province){
         if (province != null){
@@ -60,9 +60,9 @@ public class CoolWeatherDdB {
     }
 
     /**
-     * ´ÓÊı¾İ¿â¶ÁÈ¡È«¹úËùÓĞµÄÊ¡·İĞÅÏ¢
+     * ä»æ•°æ®åº“è¯»å–å…¨å›½æ‰€æœ‰çš„çœä»½ä¿¡æ¯
      */
-    public List<Province> loadProvince(){
+    public List<Province> loadProvinces(){
         List<Province> list = new ArrayList<Province> ();
         Cursor cursor = db.query ("Province",null,null,null,null,null,null);
         if (cursor.moveToFirst ()){
@@ -80,7 +80,7 @@ public class CoolWeatherDdB {
     }
 
     /**
-     * ½«cityÊµÀı´æ´¢µ½Êı¾İ¿â
+     * å°†Cityå®ä¾‹å­˜å‚¨åˆ°æ•°æ®åº“
      */
     public void saveCity(City city) {
         if (city != null){
@@ -93,7 +93,7 @@ public class CoolWeatherDdB {
     }
 
     /**
-     * ´ÓÊı¾İ¿â¶ÁÈ¡Ä³Ê¡ÏÂËùÓĞµÄ³ÇÊĞĞÅÏ¢
+     * ä»æ•°æ®åº“è¯»å–æŸçœä¸‹æ‰€æœ‰çš„åŸå¸‚ä¿¡æ¯
      */
     public List<City> loadCities(int provinceId){
         List<City> list = new ArrayList<City> ();
@@ -114,7 +114,7 @@ public class CoolWeatherDdB {
         return list;
     }
     /**
-     * ½«CountyÊµÀı´æ´¢µ½Êı¾İ¿â
+     * å°†Countyå®ä¾‹å­˜å‚¨åˆ°æ•°æ®åº“
      */
     public void saveCounty(County county){
         if (county != null){
@@ -126,7 +126,7 @@ public class CoolWeatherDdB {
         }
     }
     /**
-     * ´ÓÊı¾İ¿â¶ÁÈ¡Ä³³ÇÊĞÏÂËùÓĞµÄÏØĞÅÏ¢
+     * ä»æ•°æ®åº“è¯»å–æŸåŸå¸‚ä¸‹æ‰€æœ‰çš„å¿ä¿¡æ¯
      */
     public List<County> loadCounties(int cityId) {
         List<County> list = new ArrayList<County> ();

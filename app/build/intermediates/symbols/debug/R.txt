@@ -440,6 +440,7 @@ int id ifRoom 0x7f0c0018
 int id image 0x7f0c0028
 int id listMode 0x7f0c0009
 int id list_item 0x7f0c002a
+int id list_view 0x7f0c0050
 int id middle 0x7f0c0015
 int id multiply 0x7f0c001e
 int id never 0x7f0c0019
@@ -475,6 +476,7 @@ int id tabMode 0x7f0c000b
 int id textSpacerNoButtons 0x7f0c0033
 int id title 0x7f0c002c
 int id title_template 0x7f0c002f
+int id title_text 0x7f0c004f
 int id topPanel 0x7f0c002e
 int id up 0x7f0c0008
 int id useLogo 0x7f0c0012
@@ -508,10 +510,11 @@ int layout abc_search_dropdown_item_icons_2line 0x7f040015
 int layout abc_search_view 0x7f040016
 int layout abc_select_dialog_material 0x7f040017
 int layout abc_simple_dropdown_hint 0x7f040018
-int layout select_dialog_item_material 0x7f040019
-int layout select_dialog_multichoice_material 0x7f04001a
-int layout select_dialog_singlechoice_material 0x7f04001b
-int layout support_simple_spinner_dropdown_item 0x7f04001c
+int layout choose_area 0x7f040019
+int layout select_dialog_item_material 0x7f04001a
+int layout select_dialog_multichoice_material 0x7f04001b
+int layout select_dialog_singlechoice_material 0x7f04001c
+int layout support_simple_spinner_dropdown_item 0x7f04001d
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000
 int string abc_action_bar_home_description_format 0x7f06000d
